@@ -23,6 +23,7 @@ security:
   # Relative paths are automatically resolved relative to the project directory
   allowed_folders:
     - sandbox
+    - C:\Users\mohan\Downloads
   
   # Allow shell command execution (disabled by default for safety)
   shell_enabled: false
