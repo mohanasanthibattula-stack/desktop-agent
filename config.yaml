@@ -1,0 +1,36 @@
+# Configuration for Personal AI Desktop Agent
+
+# Active Model Provider: 'gemini' or 'claude'
+provider: gemini
+
+# Model provider specific settings
+providers:
+  gemini:
+    model: gemini-flash-lite-latest
+    temperature: 0.2
+  claude:
+    model: claude-3-5-sonnet-latest
+    temperature: 0.2
+
+# Agent loop boundaries
+agent:
+  max_steps: 15
+  timeout_seconds: 300
+
+# Security and Guardrails
+security:
+  # Folders the agent is permitted to read, write, and manage
+  # Relative paths are automatically resolved relative to the project directory
+  allowed_folders:
+    - sandbox
+  
+  # Allow shell command execution (disabled by default for safety)
+  shell_enabled: false
+  
+  # Require interactive terminal confirmation [y/N] before risky actions
+  require_confirmation: true
+
+# Local storage locations
+paths:
+  database_path: data/memory.db
+  log_path: data/agent.log

@@ -1,0 +1,18 @@
+# LLM Provider SDKs
+google-genai>=0.1.1
+anthropic>=0.30.0
+
+# Configuration & Environment
+pyyaml>=6.0.1
+python-dotenv>=1.0.1
+
+# Terminal UI & Output Formatting
+rich>=13.7.1
+
+# Web Search & HTML Extraction (Milestone 3)
+duckduckgo-search>=6.2.0
+beautifulsoup4>=4.12.3
+requests>=2.31.0
+
+# Testing
+pytest>=8.0.0
